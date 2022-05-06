@@ -8,18 +8,69 @@
 
   <body>
 
+   
     <h1 id="title">freeCodeCamp Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <div class="container">
       <form id="survey-form">
         <label for="name" id="name-label">Name</label>
         <input type="text" id="name" required placeholder="Enter your name">
+
         <label for="email" id="email-label">Email</label>
         <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+
         <label for="age" id="number-label">Age</label>
         <input type="number" name="age" id="number" min="10" max="99" placeholder="Age">
+
+        <p>Which option best describes your current role?</p>
+        <select name="roles" id="dropdown" required>
+          <option disabled selected value="">Select current role</option>
+          <option value="student">Student</option>
+          <option value="other">Other</option>
+        </select>
+
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+
+        <label>
+          <input type="radio" name="users" value="definitely" checked> Definitely
+        </label>
+
+        <label>
+          <input type="radio" name="users" value="maybe"> Maybe
+        </label>
+
+        <label>
+          <input type="radio" name="users" value="not-sure"> Not sure
+        </label>
+
+        <p>What is your favorite feature of freeCodeCamp?</p>
+        <select name="roles" id="users-suvy" required>
+          <option disabled selected value="">Select an option</option>
+          <option value="challenges">Challenge</option>
+          <option value="project">Projects</option>
+        </select>
+
+        <p>What would you like to see improved? <span>(Check all that apply)</span></p>
+
+        <label>
+        <input type="checkbox" name="improved" value="front-end-Projects" >Front-end Projects
+
+        <input type="checkbox" name="improved" value="back-end-Projects" >Back-end Projects
+        
+        <input type="checkbox" name="improved" value="data-Visualization" >Data Visualization
+
+        <input type="checkbox" name="improved" value="Videos">Videos
+        </label>
+
+        
+        <p>Any comments or suggestions?</p>
+        <textarea name="comments" id="comment" placeholder="Enter your comment here..." ></textarea>
+
+        <button type="submit" id="submit">Submit</button>
         </form>
-    </div>
+
+     </div>
+
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!--
