@@ -7,11 +7,18 @@
   </head>
 
   <body>
-
-
-    <h1>Hello World</h1>
-
-    
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <div class="container">
+      <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" required placeholder="Enter your name">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+        <label for="age" id="number-label">Age</label>
+        <input type="number" name="age" id="number" min="10" max="99" placeholder="Age">
+        </form>
+    </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
     <!--
@@ -27,5 +34,5 @@
 
     -->
     <script  src="js/index.js"></script>
-  </body>
+    </body>
 </html>
